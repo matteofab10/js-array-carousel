@@ -2,3 +2,26 @@
   background-color: aqua;
 }
 
+.mf-row {
+  height: 400px;
+}
+
+.item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.item-right img{
+  height: calc(400px / 5);
+  width: 100%;
+}
+
+.item {
+  display: none;
+}
+
+.item.active {
+  display: block;
+}
+
