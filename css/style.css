@@ -1,53 +1,63 @@
-.mf-row {
-  height: 500px;
-}
-
-.item img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-}
-
-.item-right img{
-  height: calc(500px / 5);
+.mf-item{
   width: 100%;
   object-fit: cover;
 }
 
-.item {
+.mf-left{
+  height: 500px;
+}
+
+.mf-hidden{
   display: none;
-  object-fit: cover;
 }
 
-.item.active {
+.mf-hidden.active{
   display: block;
-  object-fit: cover;
 }
 
-.slider-right {
-  position: relative;
+.mf-left-text{
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+  text-align: right;
 }
 
-.mf-down, .mf-up {
+.mf-right{
+  height: 100px;
+  filter: brightness(50%);
+}
+
+.mf-right.active2{
+  border: 3px solid white;
+  filter: brightness(100%);
+}
+
+.mf-up, .mf-down{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
   border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  filter: brightness(50%);
   cursor: pointer;
 }
 
-.mf-up {
+.mf-up{
   top: 10px;
 }
 
-.mf-down {
+.mf-down{
   bottom: 10px;
 }
 
-.mf-down:hover, .mf-up:hover {
-  background-color: white;
+.mf-up:hover, .mf-down:hover{
+  filter: brightness(100%);
 }
+
+
 
